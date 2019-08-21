@@ -1,7 +1,7 @@
 .header {
    height: 200px;
    width: 100%;
-   background: url('../images/header-bg.jpg') no-repeat;
+   background: url('../images/header-bg.png') no-repeat;
 }
 .header-brand {
   position: absolute;
@@ -16,12 +16,23 @@
 .header-brand-name {
   color: #ccc;
 }
-.header-slogan {
+/*.header-slogan {
   font-size: 18px;
   text-align: center;
-  color: #e4e7ec;
+  color: #fff;
   padding-top: 5em;
   font-weight: 300;
   letter-spacing: 1px;
 }
-
+*/
+.header-slogan {
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  padding-top: 5em;
+  font-weight: 300;
+  letter-spacing: 1px;
+  @include for-desktop-up {
+    padding-top: 2.5em;
+  }
+}
